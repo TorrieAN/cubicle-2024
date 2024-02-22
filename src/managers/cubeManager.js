@@ -5,7 +5,7 @@ exports.getAll = () => cubes.slice();
 
 exports.create = (cubeData) => {
     const newCube = {
-        id: uniqid(),
+        id: uniqid,
         ...cubeData,
     };
 
