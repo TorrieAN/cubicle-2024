@@ -1,9 +1,10 @@
 <main>
+    {{#with cube}}
     <h1>Attach a new accessory</h1>
     <div class="form">
-        <h2>Rubiks Cube</h2>
-        <img class="cube" src="https://images-na.ssl-images-amazon.com/images/I/71WS9kb-JFL._SL1300_.jpg">
-        <form action="" method="">
+        <h2>{{name}}</h2>
+        <img class="cube" src="{{imageUrl}}">
+        <form method="POST">
             <label for="accessory">Accessories</label>
             <select id="accessory" name="accessory" />
             <option value="Accessory 1">Accessory 1</option>
@@ -18,4 +19,5 @@
         </h3>
         <a class="btn" href="#">Back</a>
     </div>
+    {{/with}}
 </main>
