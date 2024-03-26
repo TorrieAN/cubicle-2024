@@ -20,3 +20,8 @@ To temporary fix this problem run these commands:
 2. sudo service mongod start
 
 That shall be fault due to user permissions in .sock file, You may have to change the owner to monogdb user.
+
+_________________
+
+Generate SECRET:
+node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
